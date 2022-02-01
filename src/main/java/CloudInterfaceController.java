@@ -86,5 +86,18 @@ public class CloudInterfaceController implements Initializable {
         os.writeUTF(fileName);
         os.flush();
     }
+    public void directoryAboveServer(ActionEvent actionEvent) throws IOException {
+//        String fileName = serverView.getSelectionModel().getSelectedItem();
+        os.writeUTF("#above_server#");
+//        os.writeUTF(fileName);
+        os.flush();
+    }
+    public void directoryAboveClient(ActionEvent actionEvent) throws IOException {
+//        String fileName = serverView.getSelectionModel().getSelectedItem();
+        os.writeUTF("#above_client#");
+//        os.writeUTF(fileName);
+        os.flush();
+    }
+
 }
 
