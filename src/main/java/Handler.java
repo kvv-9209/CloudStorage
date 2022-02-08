@@ -52,6 +52,14 @@ public class Handler implements Runnable {
                 } else if (command.equals("#get_file#")) {
                     String fileName = is.readUTF();
                     Sender.sendFile(fileName, os, clientDir);
+                    /**
+                     * Если приходит команда ниже, тогда возвращает на директорию выше в сервере и в клиенте соответственно
+                     */
+                } else if (command.equals("#above_server#")) {
+    //                clientDir = Paths.get("..");
+
+                } else if (command.equals("#above_client#")) {
+//пока не понимаю как это реализовать
                 }
             }
         } catch (Exception e) {
@@ -59,3 +67,4 @@ public class Handler implements Runnable {
         }
     }
 }
+
