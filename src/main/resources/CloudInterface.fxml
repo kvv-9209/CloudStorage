@@ -8,6 +8,8 @@
     <ListView fx:id="serverView" layoutX="333.0" layoutY="46.0" prefHeight="337.0" prefWidth="253.0" />
     <Button layoutX="280.0" layoutY="117.0" mnemonicParsing="false" onAction="#upload" prefHeight="40.0" prefWidth="40.0" text="&gt;" />
     <Button layoutX="280.0" layoutY="211.0" mnemonicParsing="false" onAction="#download" prefHeight="40.0" prefWidth="40.0" text="&lt;" />
+
+
     <Button layoutX="84.0" layoutY="9.0" mnemonicParsing="false" onAction="#directoryAboveServer" prefHeight="30.0" prefWidth="95.0" text="Above dir" />
     <Button layoutX="429.0" layoutY="9.0" mnemonicParsing="false" onAction="#directoryAboveClient" prefHeight="30.0" prefWidth="95.0" text="Above dir" />
 </AnchorPane>

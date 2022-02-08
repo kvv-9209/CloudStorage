@@ -86,18 +86,24 @@ public class CloudInterfaceController implements Initializable {
         os.writeUTF(fileName);
         os.flush();
     }
+
+    /**
+     * Здесь должен быть реализован обработчик кнопки перемещение вверх по директории,
+     * но пока не разобрался
+     * @param actionEvent
+     * @throws IOException
+     */
     public void directoryAboveServer(ActionEvent actionEvent) throws IOException {
-//        String fileName = serverView.getSelectionModel().getSelectedItem();
+        String fileName = serverView.getSelectionModel().getSelectedItem();
         os.writeUTF("#above_server#");
 //        os.writeUTF(fileName);
         os.flush();
     }
     public void directoryAboveClient(ActionEvent actionEvent) throws IOException {
-//        String fileName = serverView.getSelectionModel().getSelectedItem();
+        String fileName = serverView.getSelectionModel().getSelectedItem();
         os.writeUTF("#above_client#");
 //        os.writeUTF(fileName);
         os.flush();
     }
-
 }
 

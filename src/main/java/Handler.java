@@ -56,7 +56,7 @@ public class Handler implements Runnable {
                      * Если приходит команда ниже, тогда возвращает на директорию выше в сервере и в клиенте соответственно
                      */
                 } else if (command.equals("#above_server#")) {
-    //                clientDir = Paths.get("..");
+                    //                clientDir = Paths.get("..");
 
                 } else if (command.equals("#above_client#")) {
 //пока не понимаю как это реализовать
